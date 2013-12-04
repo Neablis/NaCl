@@ -1,0 +1,229 @@
+/*
+ * Importing fonts
+ */
+@import "../css/bootstrap.css";
+@import "../css/toastr.min.css";
+@import "../css/speech.css";
+
+
+body,
+html {
+    margin:0;
+    padding:0;
+    color:#000;
+    background:#a7a09a;
+}
+
+body h2 {
+    color: white;
+}
+
+body header {
+    width: 100%;
+    height:55px;
+    background-color: #454545;
+}
+
+body footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    height:50px;
+    background-color: #454545;
+}
+
+body #wrap {
+	display:block;
+}
+
+/*
+ * general chat client
+ */
+body #wrap #chat_client {
+    display:none;
+    height: 100%;
+    margin:10px;
+}
+/*
+ * login page
+ */
+body #wrap #login {
+   display: none;
+   height: 100%;
+   margin: 0 0 0 10px;
+   padding: 10px;
+   width: 100%;
+   background-color:black;
+   position:absolute;
+   text-align:center;
+}
+/*
+ *  friends list
+ */
+
+body #wrap #friends_list {
+    float: left;
+    min-width:200px;
+    max-width:500px;
+    width:33%;
+    height: 100%;
+    display: none;
+}
+
+body #wrap #chat_client #selector {
+    left: 20px;
+}
+
+#friends_list ul {
+    list-style-type: none;
+    padding-left:0px;
+
+}
+
+#friends_list li {
+    padding-left:15px;
+    padding-bottom: 10px;
+    padding-top:10px;
+    padding-right:15px;
+    border:white 1px solid;
+    font-size: 15px ;
+    font-weight: 500;
+    font-family: Avant Garde, arial, sans-serif;
+    margin:3px;
+    color: #fff;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 13px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 13px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 11px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    background: #454545 url(alert-overlay.png) repeat-x;
+    display-block:none;
+}
+
+body #wrap #friends_list li.active{
+    background-color: #d5d5d5;
+}
+
+
+#friends_list li  {
+    cursor:pointer;
+
+}
+
+#friends_list li:hover {
+    background-color:eee;
+}
+
+/*
+ * chats list
+ */
+body #wrap #chats_list {
+    float: left;
+    min-width:200px;
+    max-width:500px;
+    width:33%;
+    height: 100%;
+}
+
+body #wrap #chats_list li.active{
+    background-color: #d5d5d5;
+}
+
+body #wrap #chat_client #selector {
+    left: 20px;
+}
+
+#chats_list ul {
+	list-style-type: none;
+	padding-left:0px;
+
+}
+
+#chats_list li {
+	padding-left:15px;
+	padding-bottom: 10px;
+	padding-top:10px;
+	padding-right:15px;
+	border:white 1px solid;
+	font-size: 15px ;
+	font-weight: 500;
+	font-family: Avant Garde, arial, sans-serif;
+	margin:3px;
+	color: #fff;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 13px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 13px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 11px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    background: #454545 url(alert-overlay.png) repeat-x;
+    display-block:none;
+}
+
+
+
+#chats_list li  {
+	cursor:pointer;
+
+}
+
+#chats_list li:hover {
+    background-color:eee;
+}
+
+.logout {
+    position: absolute;
+    top: 15px;
+    left: 40px;
+	clear:none;
+}
+
+/*
+ * actually chat section
+ */
+body  #wrap #chat {
+    float: left;
+	height:400px;
+    clear:none;
+    border: 1px white solid;
+    background-color:#eee;
+    overflow:auto;
+    -moz-box-shadow: 0 1px 13px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 13px rgba(0,0,0,0.5);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+body  #wrap #chat .chat {
+    overflow: hidden;
+    word-wrap:break-word;
+}
+
+body  #wrap #chat .chat .glyphicon {
+    margin-right: 15px;
+}
+
+body  #wrap #chat .chat .messages {
+    margin-top: 5px;
+    overflow: scroll;
+    height: 320px;
+}
+
+body  #wrap #chat .chat .input {
+    bottom: 5px;
+    position: absolute;
+    width: 600px;
+}
+body  #wrap #chat .chat .input #message_input {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 5px;
+
+}
+
+.message {
+}

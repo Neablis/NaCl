@@ -1,0 +1,24 @@
+{
+  "name": "nko4-nodesferatu",
+  "version": "0.0.0",
+  "description": "Nodesferatu",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nko4/nodesferatu.git"
+  },
+  "dependencies": {
+    "nko": "*",
+    "socket.io" : "0.9.x",
+    "mongodb" : "*"
+  },
+    "directories": {
+        "lib": "lib"
+    },
+  "engines": {
+    "node": "0.10.x"
+  }
+}
